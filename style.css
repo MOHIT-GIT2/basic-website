@@ -104,3 +104,30 @@ footer {
     padding: 20px;
   }
 }
+.nav-tooltip {
+  position: relative;
+}
+
+.nav-tooltip span {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #222;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  white-space: nowrap;
+
+  opacity:0;
+  visibility: hidden;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-tooltip:hover span {
+  opacity: 1;
+  visibility: visible;
+}
